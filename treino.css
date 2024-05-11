@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'udroid';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #0008ff2a;
+    --cor2: #282DB8;
+    --cor3: #050CEB;
+    --cor4: #383A85;
+    --cor5: #333452;
+
+    --fonte-padrão: arial, helvetica, verdana, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'udroid', cursive;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrão);
+    text-align: justify;
+}
+
+header > h1 {
+    text-shadow: 1px 1px 1px black;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+header > p {
+    text-shadow: 1px 1px 1px black;
+    font-weight: lighter;
+    margin: auto;
+    padding: 20px;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+header {
+    background-image: linear-gradient(#0008ff2a, var(--cor3), var(--cor5));
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    padding: 10px;
+    box-shadow: 2px 2px 3px black;
+    border: 0px;
+    unicode-bidi: isolate;
+    min-height: 150px;
+}
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.527);
+    transition-duration: 0.5s;
+    color: #282DB8;
+}
+
+nav > a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 8px;
+    font-weight: bold;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.288);
+}
+
+main > h1 {
+    font-family: var(--fonte-android);
+    color: #333452;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
+    padding-bottom: 20px;
+}
+
+main > h2 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 5px;
+    font-family: var(--fonte-android);
+    color: #383A85;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding-left: 10px;
+}
+
+main > P {
+    text-align: justify;
+    text-indent: 30px;
+    margin: 15px 0px;
+    line-height: 2em;
+}
+
+main strong {
+    color: darkblue;
+    background-color: rgba(173, 216, 230, 0.123);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
+}
+
+div {
+    background-color: #333452;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 57%;
+}
+
+div > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+main {
+    background-color: white;
+    min-width: 400px;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main a:hover {
+    background-color: #050CEB;
+    color: white;
+}
+
+main a::after, footer a::after {
+    content: '\00a0\1f517';
+}
+main a, footer a {
+    padding: 3px 6px 3px 6px;
+    color: #282DB8;
+    text-decoration: none;
+    font-weight: bold;
+}
+.pequena {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+aside > h3 {
+    color: white;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    margin: 30px -30px 0px -30px
+}
+aside > p {
+    text-indent: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 2em;
+}
+
+ul {
+    list-style-type: '\2714\00a0\00a0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside {
+    background-color: #050deb2d;
+    border-radius: 10px;
+    padding: 0px 30px 30px 30px;
+}
+
+
+
+footer > a {
+    color: white;
+    text-decoration: underline;
+}
+footer > strong {
+    text-decoration: underline;
+}
+footer {
+    background-color: #050CEB;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-size: 0.8em;
+    margin-top: 30px;
+    font-weight: lighter;
+    padding: 6px;
+}
