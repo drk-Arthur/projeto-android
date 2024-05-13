@@ -44,10 +44,10 @@ header > p {
     text-shadow: 1px 1px 1px black;
     font-weight: lighter;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
-    margin-bottom: 30px;
+    padding-bottom: 50px;
     max-width: 600px;
 }
 header {
