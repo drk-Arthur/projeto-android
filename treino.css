@@ -132,7 +132,7 @@ div > iframe {
 }
 main {
     background-color: white;
-    min-width: 400px;
+    min-width: 300px;
     max-width: 800px;
     margin: auto;
     padding: 30px;
